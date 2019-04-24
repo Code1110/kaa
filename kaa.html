@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'TheSaB5';
+            src: url('https://rcp.scsstatic.ch/etc/designs/base/resources/fonts/TheSaB5_.eot?#iefix') format('embedded-opentype'), url('https://rcp.scsstatic.ch/etc/designs/base/resources/fonts/TheSaB5_.woff') format('woff'), url('https://rcp.scsstatic.ch/etc/designs/base/resources/fonts/TheSaB5_.ttf') format('truetype'), url('https://rcp.scsstatic.ch/etc/designs/base/resources/fonts/TheSaB5_.svg?') format('svg')
+        }
+
+        body {
+            font: 13px TheSaB5, 'Trebuchet MS', Arial, Helvetica, sans-serif
+        }
+
+        .row {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="logo.png" />
+            </div>
+        </div>
+        
+        <div class="row" id="step1">
+            <div class="col-md-12">
+                <!-- <form class="form-horizontal"> -->
+                    <fieldset class="form-horizontal">
+
+                        <!-- Form Name -->
+                        <legend>Was ist Ihr Anliegen?</legend>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="selectbasic">Mein Anliegen</label>
+                            <div class="col-md-4">
+                                <select id="selectbasic" name="selectbasic" class="form-control">
+                                    <option value="1">Kabelfernseher</option>
+                                    <option value="2">bla 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="button1id"></label>
+                            <div class="col-md-8">
+                                <button id="button1id" name="button1id" class="btn btn-default">Zurück</button>
+                                <button id="button2id" name="button2id" class="btn btn-primary">Weiter</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
